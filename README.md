@@ -1,5 +1,5 @@
 # sharper
-Automatic image processor built on top of sharp and multer for express
+Automatic image processor built on top of sharp and multer for express.
 
 ***
 

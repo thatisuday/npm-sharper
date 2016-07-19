@@ -1,7 +1,7 @@
 {
   "name": "sharper",
-  "version": "1.0.0",
-  "description": "Automatic image processor built on top of sharp and multer",
+  "version": "1.0.1",
+  "description": "Automatic image processor built on top of sharp and multer for express.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

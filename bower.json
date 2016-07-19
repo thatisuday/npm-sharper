@@ -1,6 +1,6 @@
 {
   "name": "sharper",
-  "description": "Automatic image processor built on top of sharp and multer",
+  "description": "Automatic image processor built on top of sharp and multer for express.",
   "main": "index.js",
   "authors": [
     "Uday Hiwarale <uhiwarale@gmail.com> (https://github.com/thatisuday)"
