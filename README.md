@@ -125,6 +125,9 @@ Upon successful upload, sharper will add `sharper` object in `res` response obje
 ***
 
 # Test
+- npm test
+
+#### in practice
 - Open terminal and run `node test-server.js` in demo folder of this module.
 - Open your browser and go to `http://localhost:8800`.
 - Upload a photo by clicking on dropzone.
