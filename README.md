@@ -70,7 +70,7 @@ var Sharper = sharper(options);
 | maxFileSize | '10mb' | maximum size of input/upload file to accept. |
 | accept | ['png','jpeg','jpg'] | array of file types/extensions to accept. |
 | output | 'jpg' | type of output file to produce. valid options : `jpg`, `png`, `gif`, `webp`, `tiff`, `bmp` |
-| sizes | `[{suffix : 'lg', width : 500, height:500}]` | sizes of output images with filename suffix. ex. `output-name.lg.jpg` |
+| sizes | `[{suffix : 'lg', width : 500, height:500}, ...]` | Array of size specification object for output images (with filename suffix to produce `output-name.lg.jpg` format). |
 
 #### sharp options
 Please visit this sharp **[sharp](https://github.com/lovell/sharp)** for detailed overview of specific option.
@@ -79,7 +79,7 @@ Please visit this sharp **[sharp](https://github.com/lovell/sharp)** for detaile
 | ------ | ------- | ---- |
 | resize | true | resize images as per their sizes mentioned in `options.sizes` |
 | crop | false | crop images as per their sizes mentioned in `options.sizes` |
-| background | {r|200 | g|200 | b|200 | a|1} | add background color |
+| background | {r: 200 , g:200, b:200,  a:1} | set the background for the embed, flatten and extend operations. |
 | embed | false | embed on canvas |
 | max | false | set maximum output dimension  |
 | min | false | set minimum output dimension |
