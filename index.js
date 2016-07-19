@@ -68,6 +68,12 @@ var sharper = function(options){
 		
 		/**
 		 *	@member {string}
+		 *	@desc location of file upload
+		**/
+		location : '/var/www/uploads/',
+		
+		/**
+		 *	@member {string}
 		 *	@desc date-format to create upload directory
 		**/
 		dirFormat : 'yyyy/mmm/d',
@@ -102,8 +108,6 @@ var sharper = function(options){
 		**/
 		sizes : [
 		    {suffix : 'lg', width : 500, height:500},
-		    {suffix : 'md', width : 300, height:300},
-		    {suffix : 'sm', width : 100, height:100}
 		],
 
 		/*
@@ -161,19 +165,6 @@ var sharper = function(options){
 		**/
 		async.waterfall(
 			[
-				/**
-				 *	@function preflight
-				 *	@desc Checks if all config options are OK
-				 *	@param {Function} callback async callback function
-				**/
-				function(callback){
-					// Check for upload location
-					if(!_.has(options, 'location')) return callback(new sError('upload location empty', 'EMPTY_LOCATION'));
-					
-					callback(null);
-				},
-
-
 				/**
 				 *	@function masterUpload
 				 *	@desc Upload master image file using multer

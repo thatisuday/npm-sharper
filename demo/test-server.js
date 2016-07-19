@@ -4,15 +4,7 @@ const sharper = require('../index');
 
 var app = express();
 
-var Sharper = sharper({
-    location : '/var/Public Gits/sharper/uploads/',
-    maxFileSize: '20mb',
-    accept : ['jpeg', 'jpg', 'png'],
-    output : 'jpg',
-    sizes : [
-        {suffix : 'md', width : 500, height : 500},
-    ]
-});
+var Sharper = sharper();
 
 // Upload route
 app.post('/upload', Sharper, function(err, req, res, next){
