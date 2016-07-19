@@ -115,8 +115,9 @@ You can catch errors in error middleware as shown previously. `err` object inclu
 
 # Success
 Upon successful upload, sharper will add `sharper` object in `res` response object. It will have following properties.
+
 | key | role |
-| ------ | ------- |
+| --- | ---- |
 | dir | `dir` that was created for storing process image. |
 | destination | absolute path of storage destination. |
 | filename | name of the image files created using sharper. |
