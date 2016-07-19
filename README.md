@@ -125,6 +125,8 @@ Upon successful upload, sharper will add `sharper` object in `res` response obje
 ***
 
 # Test
+- npm install
+- npm install -g mocha
 - npm test
 
 #### in practice
