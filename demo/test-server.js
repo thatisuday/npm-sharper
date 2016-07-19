@@ -1,5 +1,4 @@
 const express = require('express');
-const multer = require('multer');
 const sharper = require('../index');
 
 var app = express();
