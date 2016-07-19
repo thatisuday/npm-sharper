@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+    <head>
+        <title>Sharper test</title>
+        <script src="/bower/angular/angular.min.js"></script>
+        <script src="/bower/dropzone/dist/min/dropzone.min.js"></script>
+        <script src="/bower/ng-dropzone/dist/ng-dropzone.min.js"></script>
+
+        <link rel="stylesheet" href="/bower/dropzone/dist/min/dropzone.min.css"/>
+        <link rel="stylesheet" href="/bower/ng-dropzone/dist/ng-dropzone.min.css"/>
+    </head>
+    <body ng-controller="main">
+        <ng-dropzone class="dropzone" options="dzOptions" callbacks="dzCallbacks"></ng-dropzone>
+
+        <script>
+            Dropzone.autoDiscover = false;
+            var testApp = angular.module('testApp', ['thatisuday.dropzone']);
+
+            testApp.controller('main', function($scope){
+                $scope.dzOptions = {
+                    url : '/upload',
+                    maxFilesize : '10',
+                    acceptedFiles : 'image/jpeg, images/jpg, image/png'
+                };
+
+                $scope.dzCallbacks = {
+                    'success' : function(file, res){
+                        console.log(res);
+                    },
+                    'success' : function(file, xhr){
+                        console.log(file, xhr);
+                    },
+                };
+            });
+        </script>
+    </body>
+</html>

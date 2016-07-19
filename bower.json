@@ -1,0 +1,20 @@
+{
+  "name": "sharper",
+  "description": "Automatic image processor built on top of sharp and multer",
+  "main": "index.js",
+  "authors": [
+    "Uday Hiwarale <uhiwarale@gmail.com> (https://github.com/thatisuday)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/thatisuday/sharper",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "ng-dropzone": "ngdropzone#^1.0.5"
+  }
+}

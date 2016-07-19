@@ -1,0 +1,33 @@
+{
+  "name": "sharper",
+  "version": "1.0.0",
+  "description": "Automatic image processor built on top of sharp and multer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatisuday/sharper.git"
+  },
+  "author": "Uday Hiwarale <uhiwarale@gmail.com> (https://github.com/thatisuday)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatisuday/sharper/issues"
+  },
+  "homepage": "https://github.com/thatisuday/sharper#readme",
+  "dependencies": {
+    "async": "^2.0.0",
+    "bytes": "^2.4.0",
+    "dateformat": "^1.0.12",
+    "graceful-fs": "^4.1.4",
+    "lodash": "^4.13.1",
+    "mime-types": "^2.1.11",
+    "multer": "^1.1.0",
+    "randomstring": "^1.1.5",
+    "sharp": "^0.15.1"
+  },
+  "devDependencies": {
+    "express": "^4.14.0"
+  }
+}
