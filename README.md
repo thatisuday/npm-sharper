@@ -1,4 +1,4 @@
-# sharper [![Build Status](https://travis-ci.org/thatisuday/sharper.svg?branch=master)](https://travis-ci.org/thatisuday/sharper) ![dependencies](https://david-dm.org/thatisuday/sharper.svg)
+# sharper [![Build Status](https://travis-ci.org/thatisuday/sharper.svg?branch=master)](https://travis-ci.org/thatisuday/sharper) ![dependencies](https://david-dm.org/thatisuday/sharper.svg) [![npm version](https://badge.fury.io/js/sharper.svg)](https://badge.fury.io/js/sharper)
 Automatic image processor built on top of sharp and multer for express.
 
 ***
