@@ -139,3 +139,7 @@ Upon successful upload, sharper will add `sharper` object in `res` response obje
 - Upload a photo by clicking on dropzone.
 - If upload sucessfully completes, check upload directory `/var/www/html`.
 - If error occurs, check your terminal.
+
+***
+
+If you are facing node-gyp related error, go to `node_modules/sharper/node_modules/sharp` and use cmd command `node-gyp rebuild`. Make sure you have `node-gyp` installed or use `npm install -g node-gyp`
